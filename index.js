@@ -18,8 +18,8 @@ app.use(
 const userRoutes = require("./routes/userRoute");
 const postRoute = require("./routes/postRoute");
 
-app.use("/api/v1/auth", userRoutes);
-app.use("/api/v1/post",postRoute)
+app.use("/auth", userRoutes);
+app.use("/post",postRoute)
 app.listen(port,(req,res)=>{
     console.log(`server at ${port}`);
 })
