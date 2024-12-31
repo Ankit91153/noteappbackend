@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cookieParser());
 	app.use(
 		cors({
-			origin: ['http://localhost:5173', 'https://mininotesapp.netlify.app'],
+			origin: ['http://localhost:5173','https://mininotesforntend.vercel.app'],
 			credentials:true,
 		})
 	)
